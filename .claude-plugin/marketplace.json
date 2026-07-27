@@ -1,0 +1,36 @@
+{
+  "name": "forge-pack",
+  "owner": {
+    "name": "forge-pack",
+    "url": "https://github.com/rusanovproject-dotcom/forge-pack"
+  },
+  "metadata": {
+    "description": "Самодостаточный пак цикла разработки Forge: сам скилл плюс зашитые внутрь зависимости. Внешние репозитории при установке не нужны.",
+    "version": "2.0.0"
+  },
+  "plugins": [
+    {
+      "name": "superpowers",
+      "description": "Вендоренная копия obra/superpowers 5.1.0 (MIT). Процессные скиллы: TDD, systematic-debugging, executing-plans, verification-before-completion. Трек A опирается на них по каноническим именам superpowers:*.",
+      "author": {
+        "name": "Jesse Vincent",
+        "email": "jesse@fsck.com"
+      },
+      "homepage": "https://github.com/obra/superpowers",
+      "tags": ["tdd", "debugging", "workflow", "vendored"],
+      "source": "./plugins/superpowers"
+    },
+    {
+      "name": "compound-engineering",
+      "description": "Вендоренное подмножество EveryInc/compound-engineering 2.65.0 (MIT): 3 скилла (ce-plan, ce-brainstorm, document-review) и 33 агента-ревьюера/исследователя. Трек A зовёт их по каноническим именам compound-engineering:*.",
+      "author": {
+        "name": "Kieran Klaassen",
+        "email": "kieran@every.to",
+        "url": "https://github.com/kieranklaassen"
+      },
+      "homepage": "https://github.com/EveryInc/compound-engineering-plugin",
+      "tags": ["planning", "code-review", "document-review", "vendored"],
+      "source": "./plugins/compound-engineering"
+    }
+  ]
+}
